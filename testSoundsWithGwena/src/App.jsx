@@ -13,6 +13,7 @@ function App() {
       // Si le son est déjà en train de jouer, remet la position de lecture à zéro et redémarre la lecture
       audioTest.currentTime = 0;
       audioTest.play();
+      // eslint-disable-next-line no-dupe-else-if
     } else if (viteClicked) {
       audioTest.pause();
     } else {
